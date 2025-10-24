@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E.V.B. ENTERPRISE LLC</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #fff;
+            background-color: #0b0b0b;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 100px 10%;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 40px;
+            color: #f8f8f8;
+        }
+
+        p {
+            max-width: 900px;
+            margin: 0 auto 30px auto;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1115') center/cover no-repeat;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.65);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 24px;
+            max-width: 800px;
+        }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .service {
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        /* Advantages */
+        .advantages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .advantage {
+            background-color: #1a1a1a;
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 300px;
+        }
+
+        /* Process */
+        .process {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .step {
+            background-color: #1a1a1a;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        /* Contact */
+        .contact {
+            background-color: #000;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 400px;
+            max-width: 90%;
+        }
+
+        input, textarea {
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            color: #00aced;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>E.V.B. ENTERPRISE LLC</h1>
+            <p>Strategic management and consultancy for businesses that seek precision, progress, and measurable results. We deliver end-to-end project and administrative management solutions that help companies operate smarter and grow faster.</p>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about">
+        <h2>Who We Are</h2>
+        <p>At E.V.B. ENTERPRISE LLC, we specialize in business and administrative management that drives performance and clarity. Our team supports organizations in optimizing operations, structuring projects, and implementing efficient workflows. We bridge strategy and execution to help our clients achieve lasting impact. With deep industry knowledge and a commitment to excellence, we deliver solutions that transform business potential into measurable success.</p>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <h2>What We Do</h2>
+        <div class="services-grid">
+            <div class="service">
+                <h3>Business Management</h3>
+                <p>We design tailored management systems that streamline daily operations, enhance productivity, and strengthen your company’s organizational backbone. Our approach ensures your team operates with clarity and purpose.</p>
+            </div>
+            <div class="service">
+                <h3>Project Management</h3>
+                <p>From planning to execution, we provide structured oversight that keeps your projects on track, on time, and within budget. Our methods emphasize transparency, collaboration, and measurable progress.</p>
+            </div>
+            <div class="service">
+                <h3>Business Consultancy</h3>
+                <p>We offer strategic consultancy services that align your business goals with actionable insights. Whether scaling operations or refining internal processes, we help you make data-driven decisions for sustainable growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section id="advantages">
+        <h2>Why Partner With Us</h2>
+        <div class="advantages">
+            <div class="advantage">
+                <h3>Proven Expertise</h3>
+                <p>Our consultants bring years of hands-on management experience across multiple industries, ensuring every recommendation is both practical and impactful.</p>
+            </div>
+            <div class="advantage">
+                <h3>Tailored Approach</h3>
+                <p>We adapt our strategies to fit the unique DNA of your business — no templates, no one-size-fits-all solutions, just results built around your goals.</p>
+            </div>
+            <div class="advantage">
+                <h3>Long-Term Value</h3>
+                <p>Our mission is to create systems that last — empowering your business to thrive independently and sustainably long after our work is complete.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process">
+        <h2>Our Working Process</h2>
+        <div class="process">
+            <div class="step">
+                <h3>1. Discovery & Assessment</h3>
+                <p>We start by understanding your business structure, challenges, and goals to identify key areas for improvement and opportunity.</p>
+            </div>
+            <div class="step">
+                <h3>2. Strategy Development</h3>
+                <p>Our team builds a clear, actionable plan that integrates strategic objectives with practical implementation steps tailored to your operations.</p>
+            </div>
+            <div class="step">
+                <h3>3. Implementation & Support</h3>
+                <p>We oversee the rollout, track performance metrics, and ensure your organization has the tools and systems for long-term success.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Let’s Work Together</h2>
+        <p>We’re ready to help your business operate at its full potential. Reach out today to discuss how we can support your next strategic move or project initiative.</p>
+        <p><strong>Email:</strong> <a href="mailto:hello@evbenterprise.org">hello@evbenterprise.org</a></p>
+        <p><strong>Address:</strong> 5302 E Van Buren St Unit 3046, Phoenix, AZ 85008, United States</p>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</body>
+</html>
